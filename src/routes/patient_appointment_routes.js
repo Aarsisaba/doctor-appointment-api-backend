@@ -1,23 +1,4 @@
-/*const express = require("express");
-const router = express.Router();
 
-const appointmentController = require("../controllers/patient_appointment_controller");
-const paymentController = require("../controllers/payment_controller");
-
-// ================= Payment =================
-// (declared before "/:id" so "payment" is never mistaken for an :id param)
-router.post("/payment", paymentController.createPayment);
-router.post("/payment/verify", paymentController.verifyPayment);
-
-// ================= Appointments =================
-router.post("/", appointmentController.book);
-router.get("/", appointmentController.getAll);
-router.get("/:id", appointmentController.getById);
-router.put("/:id", appointmentController.reschedule);
-router.patch("/:id/cancel", appointmentController.cancel);
-
-module.exports = router;
-*/
 const express = require("express");
 
 const router = express.Router();

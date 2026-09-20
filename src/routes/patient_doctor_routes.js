@@ -1,15 +1,4 @@
-/*const express = require("express");
-const router = express.Router();
 
-const patientDoctorController = require("../controllers/patient_doctor_controller");
-
-router.get("/search", patientDoctorController.search);
-router.get("/nearby", patientDoctorController.nearby);
-router.get("/:doctorId/availability", patientDoctorController.getAvailability);
-router.get("/:doctorId", patientDoctorController.getDetails);
-
-module.exports = router;
-*/
 
 const express = require("express");
 
