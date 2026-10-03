@@ -38,6 +38,11 @@ const patientAuthSchema = new mongoose.Schema(
       type: String,
       default: "patient",
     },
+
+    profileImage: {
+  type: String,
+  default: "",
+},
   },
   {
     timestamps: true,
