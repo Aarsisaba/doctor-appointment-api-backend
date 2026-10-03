@@ -1,4 +1,4 @@
-const PatientAuth = require("../models/patient_auth");
+const PatientAuth = require("../models/PatientAuth");
 
 // ============================================================
 // GET PATIENT PROFILE
