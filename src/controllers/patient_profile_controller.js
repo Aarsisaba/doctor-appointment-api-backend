@@ -69,7 +69,8 @@ exports.updateProfile = async (req, res) => {
     if (address !== undefined) {
       patient.address = address.trim();
     }
-
+// save profile image 
+    if (req.file) { patient.profileImage = `/uploads/patients/${req.file.filename}`; }
     await patient.save();
 
     const updatedPatient = await PatientAuth.findById(

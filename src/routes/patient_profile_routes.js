@@ -6,6 +6,9 @@ const patientProfileController = require(
   "../controllers/patient_profile_controller"
 );
 
+const uploadPatientProfileImage = require(
+  "../middleware/patient_profile_upload"
+);
 // ============================================================
 // GET PATIENT PROFILE
 // ============================================================
@@ -18,9 +21,9 @@ router.get(
 // ============================================================
 // UPDATE PATIENT PROFILE
 // ============================================================
-
 router.put(
   "/",
+  uploadPatientProfileImage,
   patientProfileController.updateProfile
 );
 
